@@ -25,3 +25,8 @@ Condition: Clear
 Weather in Malete, Zambia:
 Temperature: 18°C
 Condition: Light rain shower
+
+### BANNER
+### RESULTS
+![Page Screenshot](./Images/Screenshot%20(160).png)
+
