@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Banner Generator</title>
+</head>
+<body>
+    <h1>Profile Banner Generator</h1>
+    <form id="bannerForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="backgroundColor">Background Color:</label>
+        <input type="color" id="backgroundColor" name="backgroundColor" value="#000000"><br><br>
+        <label for="textColor">Text Color:</label>
+        <input type="color" id="textColor" name="textColor" value="#FFFFFF"><br><br>
+        <button type="submit">Generate Banner</button>
+    </form>
+    <h2>Generated Banner:</h2>
+    <img id="banner" src="" alt="Your Banner" style="display: none;">
+    <script src="./script.js"></script>
+</body>
+</html>
