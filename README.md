@@ -2,12 +2,12 @@
 
 ## THIS REPO IS FOR PROJECTS I WILL BUILDNG DAILY THROUGH OUT THIS YEAR 2025 TO FURTHER MY KNOWLEDGE 
 
-### 001 BANNER
+## 001 BANNER
 ### RESULTS
 ![Page Screenshot](./Images/Screenshot%20(161).png)
 
 
-### 002 WEATHER PROJECT
+## 002 WEATHER PROJECT
 ![Page Screenshot](./Images/Screenshot%20(160).png)
 ### RESULTS
 ✔ Enter a city name to get the weather (or type "exit" to quit): Lagos
@@ -31,7 +31,7 @@ Weather in Malete, Zambia:
 Temperature: 18°C
 Condition: Light rain shower
 
-### 003 SLIDER FROM X
+## 003 SLIDER FROM X
 
 ### RESULTS
 ![Page Screenshot](./Images/Screenshot%20(170).png)
