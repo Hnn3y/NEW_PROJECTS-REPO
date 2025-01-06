@@ -52,6 +52,14 @@ p{
     } 
 
     & .select {
+        text-transform: uppercase;
+    } 
+
+    & .sizes {
+        display: flex;
+        justify-content: flex-start;
+        gap: 0.4em;
+
         
     }
 }
