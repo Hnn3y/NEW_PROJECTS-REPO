@@ -9,3 +9,12 @@
     --dark: #4E4E4E;
 } 
 
+.container{
+    display: flex;
+    justify-content: center;
+    width: 40em;
+    background: var(--white);
+    box-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
+    border-radius: 15px;
+    padding: 1.2em;
+}
