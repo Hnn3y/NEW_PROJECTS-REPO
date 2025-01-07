@@ -7,103 +7,170 @@
     --pink: #D9AAB7;
     --rose: #BA7E7E;
     --dark: #4E4E4E;
-} 
+}
 
-.container{
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--tan);
+}
+
+.container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    width: 40em;
+    width: 90%;
+    max-width: 1200px;
     background: var(--white);
     box-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
     border-radius: 15px;
-    padding: 1.2em;
-} 
+    padding: 2em;
+    margin: 2em auto;
+}
 
-p{
-    font-size: 0.6em;
+p {
+    font-size: 1em;
     color: var(--rose);
     letter-spacing: 1px;
-} 
+}
 
-.image{
+.image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+
+.image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.slide-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.slide-buttons span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--light);
+    cursor: pointer;
+}
+
+.slide-buttons .focus {
+    background: var(--rose);
+}
+
+.select {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.sizes {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    margin-top: 1em;
+}
+
+.sizes span {
+    border: 1px solid var(--light);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.sizes span:hover {
+    background: var(--rose);
+    color: var(--white);
+    transition: all 0.4s ease-in-out;
+}
+
+.sizes .focus {
+    background: var(--rose);
+    color: var(--white);
+}
+
+.catalogue {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 1em;
+}
 
-    & img {
-        width: 15em;
-    } 
+.catalogue p {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
 
-    & .slide-buttons{
-        display: flex;
-        justify-content: center;
-        gap: 1em;
+.catalogue h1 {
+    font-size: 2em;
+    color: var(--dark);
+    margin-top: -5px;
+}
 
-        & span {
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-            background: var(--light);
-        } 
+.catalogue h2 {
+    font-size: 1.5em;
+    color: var(--rose);
+    margin-bottom: 1em;
+}
 
-        & .focus {
-            background: var(--rose);
-        }
-    } 
+.description {
+    text-transform: none;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: var(--dark);
+    font-size: 1em;
+    line-height: 1.6em;
+    text-align: justify;
+}
 
-    & .select {
-        text-transform: uppercase;
-    } 
-
-    & .sizes {
-        display: flex;
-        justify-content: flex-start;
-        gap: 0.4em;
-
-        & span {
-            border: 1px solid var(--light);
-            width: 25px;
-            height: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2px;
-            font-size: 0.7em;
-
-            &:hover {
-                background: var(--rose);
-                color: var(--white);
-                transition: all 0.4s ease-in-out;
-            }
-
-        }
-
-        & .focus{
-            background: var(--rose);
-            color: var(--white);
-        }
-    }
-} 
-
-.catalogue{
+.buttons {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    gap: 10px;
+}
 
-    & p {
-        text-transform: uppercase;
-    }
+.cart, .react {
+    padding: 15px;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1em;
+}
 
-    & h1 {
-        font-size: 1.2em;
-        color: var(--dark);
-        margin-top: -5px;
-    } 
+.cart {
+    flex: 3;
+    background: var(--pink);
+}
 
-    & .description{
-        text-transform: none;
-        letter-spacing: 1;
-        margin-bottom: 20px;
-        color: var(--dark);
-    }
+.cart:hover {
+    background: var(--rose);
+    transition: all 0.5s ease-in-out;
+}
+
+.react {
+    flex: 1;
+    background: var(--light);
+}
+
+.react:hover {
+    background: var(--rose);
+    transition: all 0.5s ease-in-out;
 }
