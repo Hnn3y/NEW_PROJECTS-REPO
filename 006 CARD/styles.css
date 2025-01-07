@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap');
 
-;root {
+:root {
     --white: #F5F5F5;
     --light: #E0C9CB;
     --tan: #C3A1A0;
@@ -96,6 +96,14 @@ p{
 
     & h1 {
         font-size: 1.2em;
+        color: var(--dark);
+        margin-top: -5px;
+    } 
+
+    & .description{
+        text-transform: none;
+        letter-spacing: 1;
+        margin-bottom: 20px;
         color: var(--dark);
     }
 }
