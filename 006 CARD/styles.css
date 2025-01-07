@@ -84,3 +84,18 @@ p{
         }
     }
 } 
+
+.catalogue{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & p {
+        text-transform: uppercase;
+    }
+
+    & h1 {
+        font-size: 1.2em;
+        color: var(--dark);
+    }
+}
