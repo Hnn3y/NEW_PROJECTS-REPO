@@ -46,3 +46,7 @@ Condition: Light rain shower
 ## 005 FUELER LANDING PAGE FROM X
 ### RESULTS
 ![Page Screenshot](./Images/Screenshot%20(172).png)
+
+## 006 CARD
+### RESULTS
+![Page Screenshot](./Images/Screenshot%20(173).png)
