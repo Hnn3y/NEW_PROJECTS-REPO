@@ -59,6 +59,28 @@ p{
         display: flex;
         justify-content: flex-start;
         gap: 0.4em;
-        
+
+        & span {
+            border: 1px solid var(--light);
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+            font-size: 0.7em;
+
+            &:hover {
+                background: var(--rose);
+                color: var(--white);
+                transition: all 0.4s ease-in-out;
+            }
+
+        }
+
+        & .focus{
+            background: var(--rose);
+            color: var(--white);
+        }
     }
-}
+} 
