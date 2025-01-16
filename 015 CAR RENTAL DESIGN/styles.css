@@ -1,6 +1,11 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-image: url('/Images/BMW-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
 }
 
 .hero {
@@ -29,14 +34,14 @@ body {
 
 .navbar {
   padding: 1rem 0;
+  background-color: transparent !important; /* Make the navbar background transparent */
 }
 
 .navbar .nav-link:hover {
   color: #0d6efd;
 }
 
-
-  /* Car container for positioning */
+/* Car container for positioning */
 .car-container {
   position: absolute;
   bottom: 10%;
@@ -70,4 +75,8 @@ body {
   100% {
     transform: rotateY(360deg);
   }
-}
+} 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
