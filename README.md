@@ -55,3 +55,7 @@ Condition: Light rain shower
 ## 008 UBER CLONE APP
 ### RESULTS
 ![Page Screenshot](./Images/Screenshot%20(173).png)
+
+## 016 CAR RENTAL PROJECT
+### RESULTS
+![Page Screenshot](./Images/Screenshot%20(173).png)
