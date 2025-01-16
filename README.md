@@ -58,4 +58,4 @@ Condition: Light rain shower
 
 ## 016 CAR RENTAL PROJECT
 ### RESULTS
-![Page Screenshot](./Images/Screenshot%20(173).png)
+![Page Screenshot](./Images/Screenshot%20(174).png)
