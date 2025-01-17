@@ -1,1 +1,1 @@
-import "@fontsource/bricolage-grotesque"; 
+import "typeface-bricolage-grotesque";

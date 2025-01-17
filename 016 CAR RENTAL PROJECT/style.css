@@ -2,25 +2,12 @@
 
 body {
   font-family: 'Bricolage Grotesque', sans-serif;
-} 
+  background-color: black;
+}
 
 .reflection {
   position: relative;
-}
-
-.reflection::after {
-  content: "";
-  position: absolute;
-  top: 100%; 
-  left: 0;
-  right: 0;
-  bottom: -20px;
-  background-image: inherit;
-  background-size: cover;
-  background-position: center;
-  transform: scaleY(-1); 
-  opacity: 0.5; 
-}
+} 
 
 .fade-in {
   animation: fadeIn 5s ease-in-out;
@@ -48,4 +35,24 @@ body {
     transform: translateY(1);
     opacity: 1;
   }
+}
+
+.nav-gradient{
+  font-weight: light;
+  text-align: center;
+
+  background: linear-gradient(to right, white, grey, white);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+.gradient-text {
+  font-weight: light;
+  text-align: center;
+
+  background: linear-gradient(to right, white, grey);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
 }
