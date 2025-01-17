@@ -1,6 +1,3 @@
-body {
-  font-family: 'Roboto', sans-serif;
-}
 
 .reflection {
   position: relative;
@@ -49,7 +46,4 @@ body {
   }
 }
 
-/* Custom font */
-body {
-  font-family: 'Roboto', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
