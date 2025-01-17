@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./*.html", "./src/**/*.{html,js}"], // Include all relevant file types
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'bricolage': ['Bricolage Grotesque', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };

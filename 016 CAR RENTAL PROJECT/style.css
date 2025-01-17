@@ -1,3 +1,9 @@
+@import "@fontsource/bricolage-grotesque"; 
+
+body {
+  font-family: 'Bricolage Grotesque', sans-serif;
+} 
+
 .reflection {
   position: relative;
 }
@@ -5,20 +11,19 @@
 .reflection::after {
   content: "";
   position: absolute;
-  top: 100%; /* Place below the original element */
+  top: 100%; 
   left: 0;
   right: 0;
-  bottom: -20px; /* Adds spacing between the image and reflection */
+  bottom: -20px;
   background-image: inherit;
   background-size: cover;
   background-position: center;
-  transform: scaleY(-1); /* Flips the image vertically */
-  opacity: 0.5; /* Adjust the transparency for reflection */
+  transform: scaleY(-1); 
+  opacity: 0.5; 
 }
 
-/* Custom CSS for animations */
 .fade-in {
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 5s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -31,22 +36,16 @@
 }
 
 .slide-in {
-  animation: slideIn 1s ease-in-out;
+  animation: slideIn 5s ease-in-out;
 }
 
 @keyframes slideIn {
   from {
-    transform: translateY(-20px);
+    transform: translateY(-50px);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    transform: translateY(1);
     opacity: 1;
   }
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
-
-body {
-  font-family: 'Bricolage Grotesque', sans-serif;
 }
