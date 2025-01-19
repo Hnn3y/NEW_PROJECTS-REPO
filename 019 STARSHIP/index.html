@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starship Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <style>
+    /* Fix for rounded corners in the image */
+    .rounded-lg img {
+      border-radius: 0.75rem;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+  <!-- Card -->
+  <div
+    id="card"
+    class="max-w-4xl rounded-lg overflow-hidden shadow-lg transform scale-95 opacity-0 transition duration-500"
+  >
+    <!-- Image with gradient overlay -->
+    <div class="relative">
+      <img
+        src="/Images/SpaceX-2.jpg"
+        alt="Starship"
+        class="w-full h-[500px] object-cover"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-transparent to-white"
+      ></div>
+
+      <!-- Content -->
+      <div class="absolute inset-0 flex flex-col justify-end p-8">
+        <!-- SpaceX Logo -->
+        <div>
+          <img
+            src="/Images/SpaceX-1.jpg"
+            alt="SpaceX"
+            class="w-24 mb-4"
+          />
+        </div>
+
+        <!-- Text -->
+        <h1 class="text-4xl font-bold text-gray-800">Starship</h1>
+        <p class="text-lg text-gray-600 mt-2">
+          The Frontier of Multiplanetary Travel.
+        </p>
+
+        <!-- Button -->
+        <button
+          class="mt-6 bg-gray-800 hover:bg-gray-700 text-white py-2 px-6 rounded-lg shadow-lg"
+        >
+          Explore More
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- GSAP Animations -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.fromTo(
+        "#card",
+        { scale: 0.9, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 1.5, ease: "power3.out" }
+      );
+    });
+  </script>
+</body>
+</html>

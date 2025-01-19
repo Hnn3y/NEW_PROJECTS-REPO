@@ -5,49 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpaceX</title>
     <link href="./dist/style.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 flex justify-center items-center min-h-screen">
-  <!-- Card Container -->
-  <div
-    id="card"
-    class="max-w-4xl mx-auto rounded-lg overflow-hidden shadow-lg transform scale-95 opacity-0 transition duration-500"
-  >
-    <!-- Image and Gradient Overlay -->
-    <div class="relative">
-      <img
-        src="/Images/SpaceX-1.jpg"
-        alt="Starship"
-        class="w-full h-[500px] object-cover"
-      />
-      <div
-        class="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-90 pointer-events-none"
-      ></div>
+  <div class="card max-w-4xl rounded-xl overflow-hidden shadow-lg justify-center items-center scale-95 opacity-0 transition duration-500">
+    
+    <img src="/Images/SpaceX-1.jpg" alt="Starship" class="custom-width h-[500px] object-cover"/>
 
-      <!-- Content -->
-      <div class="absolute inset-0 flex flex-col justify-end p-10">
-        <!-- SpaceX Logo -->
-        <img
-          src="/Images/SpaceX-2.jpg"
-          alt="SpaceX"
-          class="w-28 mb-4"
-        />
-
-        <!-- Starship Title -->
-        <h1 class="text-4xl font-bold text-gray-800">Starship</h1>
-        <p class="text-lg text-gray-600 mt-2">
-          The Frontier of Multiplanetary Travel.
-        </p>
-
-        <!-- Button -->
-        <button
-          class="mt-6 bg-gray-800 hover:bg-gray-700 text-white py-2 px-6 rounded-lg shadow-lg"
-        >
-          Explore More
-        </button>
-      </div>
-    </div>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white"></div>
   </div>
-
-  <script src="script.js"></script>
 </body>
+
 </html>
