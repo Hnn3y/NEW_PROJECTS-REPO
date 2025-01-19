@@ -2,7 +2,9 @@
   "name": "019-spacex",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "build": "postcss src/style.css -o dist/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,5 +16,8 @@
     "gsap": "^3.12.7",
     "postcss": "^8.5.1",
     "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "postcss-cli": "^11.0.0"
   }
 }
