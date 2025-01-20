@@ -10,43 +10,45 @@
   <!-- Card -->
   <div
     id="card"
-    class="max-w-5xl w-full h-96 rounded-lg overflow-hidden shadow-lg relative flex"
+    class="max-w-5xl w-full h-96 rounded-lg overflow-hidden shadow-lg relative"
   >
-    <!-- Left Image Section -->
-    <div class="w-2/3 relative">
+    <!-- Background Image Section -->
+    <div class="relative h-full">
       <img
-        src="https://cdn.spacex.com/media/starship.jpg"
+        src="/Images/SpaceX-2.jpg"
         alt="Starship"
         class="w-full h-full object-cover"
       />
-      <!-- Gradient Overlay -->
       <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white"></div>
 
-      <!-- SpaceX Logo at Top-Left -->
-      <div class="absolute top-6 left-6">
+      <!-- SpaceX Logo and Text -->
+      <div class="absolute top-6 left-6 flex items-center">
+        <!-- Logo -->
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/d/de/SpaceX-Logo-Black.png"
-          alt="SpaceX"
-          class="w-28"
-        />
+        src="/Images/spacex.svg"
+        alt="Starship"
+        class="w-full h-full object-cover"
+      />
       </div>
     </div>
 
-    <!-- Right Content Section -->
-    <div class="w-1/3 bg-white flex flex-col justify-center p-8">
-      <!-- Text Content -->
-      <h1 class="text-4xl font-bold text-gray-800">Starship</h1>
-      <p class="text-lg text-gray-600 mt-4">
-        The Frontier of Multiplanetary Travel.
-      </p>
-
-      <!-- Button -->
-      <button
-        class="mt-8 bg-gray-800 hover:bg-gray-700 text-white py-2 px-6 rounded-lg shadow-lg"
-      >
-        Explore More
-      </button>
-    </div>
+    <div class="absolute inset-0 flex items-end justify-between p-8 pb-12">
+        <!-- Left Content -->
+        <div class="text-gray-800">
+          <h1 class="text-4xl font-bold">Starship</h1>
+          <p class="text-lg text-gray-600">
+            The Frontier of Multiplanetary Travel.
+          </p>
+        </div>
+      
+        <!-- Button (Right-Aligned) -->
+        <div>
+          <button
+            class="bg-black hover:bg-gray-700 text-white py-2 px-6 rounded-lg shadow-lg">
+            Explore More
+          </button>
+        </div>
+      </div>           
   </div>
 
   <!-- JavaScript -->
