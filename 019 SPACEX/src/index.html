@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Starship Card</title>
   <link rel="stylesheet" href="../dist/styles.css">
-  <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
 </head>
 <body class="bg-gray-100 flex justify-center items-center min-h-screen">
   <div
@@ -29,9 +28,9 @@
       </div>
     </div>
 
-    <div class="absolute inset-0 flex items-end justify-between p-8 pb-12 animate__animated animate__slideInUp animate__delay-2s animate__slow">
+    <div class="absolute inset-0 flex items-end justify-between p-8 pb-12">
         <div class="text-gray-800">
-          <h1 class="text-4xl font-bold">Starship</h1>
+          <h1 class="text-4xl font-bold" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Starship</h1>
           <p class="text-lg text-gray-600">
             The Frontier of Multiplanetary Travel.
           </p>
@@ -39,7 +38,7 @@
       
         <div>
           <button
-            class="bg-black hover:bg-gray-700 text-white py-2 px-6 rounded-lg shadow-lg">
+            class="bg-black hover:bg-gray-700 text-white py-2 px-6 rounded-lg shadow-lg" data-aos="zoom-in">
             Explore More
           </button>
         </div>
