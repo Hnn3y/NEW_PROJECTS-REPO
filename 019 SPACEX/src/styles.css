@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.rounded-lg img {
-    border-radius: 0.75rem;
+.animate__animated {
+    animation-duration: 2.5s; /* Adjust the duration */
+    animation-delay: 0.8s; /* Optional delay */
   }

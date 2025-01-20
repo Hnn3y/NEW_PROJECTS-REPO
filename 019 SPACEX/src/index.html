@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Starship Card</title>
   <link rel="stylesheet" href="../dist/styles.css">
+  <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
 </head>
 <body class="bg-gray-100 flex justify-center items-center min-h-screen">
-  <!-- Card -->
   <div
     id="card"
-    class="max-w-5xl w-full h-96 rounded-lg overflow-hidden shadow-lg relative"
+    class="max-w-3xl w-full h-96 rounded-xl overflow-hidden shadow-lg relative"
   >
-    <!-- Background Image Section -->
     <div class="relative h-full">
       <img
         src="/Images/SpaceX-2.jpg"
@@ -21,9 +20,7 @@
       />
       <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white"></div>
 
-      <!-- SpaceX Logo and Text -->
       <div class="absolute top-6 left-6 flex items-center">
-        <!-- Logo -->
         <img
         src="/Images/spacex.svg"
         alt="Starship"
@@ -32,8 +29,7 @@
       </div>
     </div>
 
-    <div class="absolute inset-0 flex items-end justify-between p-8 pb-12">
-        <!-- Left Content -->
+    <div class="absolute inset-0 flex items-end justify-between p-8 pb-12 animate__animated animate__slideInUp animate__delay-2s animate__slow">
         <div class="text-gray-800">
           <h1 class="text-4xl font-bold">Starship</h1>
           <p class="text-lg text-gray-600">
@@ -41,7 +37,6 @@
           </p>
         </div>
       
-        <!-- Button (Right-Aligned) -->
         <div>
           <button
             class="bg-black hover:bg-gray-700 text-white py-2 px-6 rounded-lg shadow-lg">
@@ -51,7 +46,6 @@
       </div>           
   </div>
 
-  <!-- JavaScript -->
   <script src="./main.js"></script>
 </body>
 </html>
