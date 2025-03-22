@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>QR LOCKER</title>
 </head>
 <body>
-    
+    <form action = "/upload" method="POST">
+        <label for="file">Select File:</label>
+        <input type="file" name="file" required>
+
+        <label for="expiration">Set Expiration (Minutes):</label>
+        <input type="number" name="expiration" min="1" required>
+        
+        <input type="submit" value="Generate QR code">
+    </form>
+
+    <script src="script.js"></script>
 </body>
 </html>
