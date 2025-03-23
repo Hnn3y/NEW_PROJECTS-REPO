@@ -13,6 +13,7 @@ const port = 3000;
 var qrLocker = "";
 
 app.use(bodyParser.urlencoded({ extended: true}));
+app.use(express.static("public"));
 
 function Locker(req, res, next) {
     console.log(req.body);
