@@ -1,7 +1,8 @@
-import inquirer from "inquirer";
+import multer from "multer";
 import bodyParser from "body-parser";
 import qr from "qr-image";
 import express from "express";
+import fs from "fs";
 
 import {dirname} from "path";
 import { fileURLToPath } from "url";
@@ -15,11 +16,16 @@ var qrLocker = "";
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(express.static("public"));
 
-function Locker(req, res, next) {
-    console.log(req.body);
-    qrLocker = req.body["file"] + req.body["expiration"];
-    next();
-}
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        const uploadPath = path.join(__dirname, "uploads");
+        if(fs.existsSync(uploadPath)) {
+            fs.mkdirSync(uploadPath);
+        } 
+        cb(null, uploadPath);
+    },
+    
+})
 
 app.use(Locker);
 
