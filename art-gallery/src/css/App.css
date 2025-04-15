@@ -1,0 +1,79 @@
+/* App.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-item {
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+
+.explore-btn {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  text-decoration: none;
+}
+
+.home-section {
+  text-align: center;
+  padding: 2.5rem;
+  background-color: white;
+}
+
+.home-heading {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.circle-decor {
+  display: inline-block;
+  width: 2.5rem;
+  height: 1.5rem;
+  background-color: #d1d5db;
+  margin: 0 0.5rem;
+  border-radius: 9999px;
+}
+
+.home-description {
+  margin-top: 1rem;
+  color: #6b7280;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.art-image {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: auto;
+}
+
+.page-section {
+  padding: 2.5rem;
+}
