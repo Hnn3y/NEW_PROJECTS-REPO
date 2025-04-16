@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  background-color: white;
+  background-color: #12b6f7f6;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -36,7 +36,7 @@
 .home-section {
   text-align: center;
   padding: 2.5rem;
-  background-color: white;
+  background-color: #50C9CE; 
 }
 
 .home-heading {

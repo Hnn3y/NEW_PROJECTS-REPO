@@ -15,9 +15,9 @@ function Home () {
         </p>
         <button className="explore-btn">Explore</button>
         <div className="gallery">
-          <img src="/images/art1.jpg" alt="Art 1" className="art-image" />
-          <img src="/images/art2.jpg" alt="Art 2" className="art-image" />
-          <img src="/images/art3.jpg" alt="Art 3" className="art-image" />
+          <img src="/Images/SpaceX-1.jpg" alt="Art 1" className="art-image" />
+          <img src="/Images/BMW-1.jpg" alt="Art 2" className="art-image" />
+          <img src="/Images/Traffic.jpg" alt="Art 3" className="art-image" />
         </div>
       </section>
     )
