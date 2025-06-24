@@ -81,3 +81,7 @@ THIS WAS BUILT USING REACT
 Personal Budget Tracker
 
 Build a CLI app to track your tasks and manage your to-do list.
+
+<a href="https://roadmap.sh/projects/task-tracker" target="_blank">
+<img src="preview.gif" alt="Preview">
+</a>
