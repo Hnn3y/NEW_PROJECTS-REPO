@@ -3,6 +3,7 @@ import cron from "node-cron";
 import twilio from "twilio";
 import nodemailer from "nodemailer";
 
+
 // === CONFIGURATION ===
 const SPREADSHEET_ID = "YOUR_SHEET_ID";
 const CUSTOMER_RANGE = "Customers!A2:E"; // Name | Phone | Email | Car | Next Service Date
@@ -101,3 +102,4 @@ cron.schedule("0 9 * * *", () => {
   console.log("⏰ Running service reminder job...");
   checkAndSendReminders();
 });
+
