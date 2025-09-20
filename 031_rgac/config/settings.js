@@ -14,18 +14,26 @@ export default {
 
   // Notifications
   notifications: {
-    email: {
-      service: "gmail",
-      user: "yourcompany@gmail.com",
-      pass: "your-app-password" // use App Password, not your real password
+    twilio: {
+    accountSid: process.env.TWILIO_ACCOUNT_SID,
+    authToken: process.env.TWILIO_AUTH_TOKEN,
+    from: process.env.TWILIO_FROM_NUMBER
     },
-    sms: {
-      accountSid: "your_twilio_account_sid",
-      authToken: "your_twilio_auth_token",
-      fromNumber: "+1234567890"
+    email: {
+    service: process.env.EMAIL_SERVICE || 'gmail',
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS
     }
-  },
-
-  // Cron job schedule (every day at 9 AM)
-  schedule: "0 6 * * *"
-};
+    },
+    schedule: {
+    dailyCron: '0 9 * * *' // every day at 9:00 server local time
+    },
+    plans: {
+    monthly: 30,
+    quarterly: 90,
+    yearly: 365
+    },
+    hr: {
+    email: process.env.HR_EMAIL
+    }
+    };
