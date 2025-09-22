@@ -20,21 +20,22 @@
 
 ```mermaid
 flowchart TD
-    A[Customer Database<br/>(Google Sheets)] --> B[Scheduler<br/>(node-cron)]
-    B --> C[Reminder Logic<br/>(Node.js)]
+    A["Customer Database\n(Google Sheets)"] --> B["Scheduler\n(node-cron)"]
+    B --> C["Reminder Logic\n(Node.js)"]
 
-    C -->|Has Email + Phone| D[Send Email via Nodemailer]
-    C -->|Has Email + Phone| E[Send SMS via Twilio]
+    C -->|Has Email + Phone| D["Send Email via Nodemailer"]
+    C -->|Has Email + Phone| E["Send SMS via Twilio"]
     
     C -->|Only Email| D
     C -->|Only Phone| E
-    C -->|No Contact| F[Log Error / Skip]
+    C -->|No Contact| F["Log Error / Skip"]
 
-    D --> G[Customer Receives Email]
-    E --> H[Customer Receives SMS]
+    D --> G["Customer Receives Email"]
+    E --> H["Customer Receives SMS"]
 
-    G --> I[Delivery Logs]
+    G --> I["Delivery Logs"]
     H --> I
     F --> I
+
 
 ```
