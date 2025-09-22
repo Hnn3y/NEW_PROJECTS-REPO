@@ -20,22 +20,15 @@
 
 ```mermaid
 flowchart TD
-    A["Company Google Sheet<br/>Master Data"] --> B["Scheduler\n(node-cron)"]
-    B --> C["Reminder Logic\n(Node.js)"]
+    A[Company Google Sheet<br/>Master Data] --> B[Reminder Service<br/>(Node.js)]
+    B --> C[Extract Required Fields]
+    C --> D[Your Reminder Sheet<br/>Slimmed Data]
 
-    C -->|Has Email + Phone| D["Send Email via Nodemailer"]
-    C -->|Has Email + Phone| E["Send SMS via Twilio"]
-    
-    C -->|Only Email| D
-    C -->|Only Phone| E
-    C -->|No Contact| F["Log Error / Skip"]
+    D --> E[Check Reminder Dates]
+    E -->|Due| F[Send Email/SMS]
+    E -->|Not Due| G[Skip]
 
-    D --> G["Customer Receives Email"]
-    E --> H["Customer Receives SMS"]
-
-    G --> I["Delivery Logs"]
-    H --> I
-    F --> I
-
+    F --> H[Log Status in Reminder Sheet]
+    H --> A
 
 ```
