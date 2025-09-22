@@ -20,7 +20,7 @@
 
 ```mermaid
 flowchart TD
-    A["Customer Database\n(Google Sheets)"] --> B["Scheduler\n(node-cron)"]
+    A["Company Google Sheet<br/>Master Data"] --> B["Scheduler\n(node-cron)"]
     B --> C["Reminder Logic\n(Node.js)"]
 
     C -->|Has Email + Phone| D["Send Email via Nodemailer"]
