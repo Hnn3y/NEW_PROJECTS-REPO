@@ -20,7 +20,7 @@
 
 ```mermaid
 flowchart TD
-    A[Company Google Sheet <br/> Master Data] --> B(Reminder Service <br/> (Node.js))
+    A[Company Google Sheet <br/> Master Data] --> B(Reminder Service <br/> Node.js )
     B --> C[Extract Required Fields]
     C --> D[Your Reminder Sheet<br/>Slimmed Data]
 
