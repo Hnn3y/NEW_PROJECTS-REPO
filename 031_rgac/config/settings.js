@@ -1,39 +1,18 @@
-export default {
-  // Local Excel files
-  local: {
-    customersFile: "./data/customers.xlsx",
-    remindersFile: "./data/reminders.xlsx"
-  },
+export const MASTER_SHEET_ID = "your-company-sheet-id";
+export const REMINDER_SHEET_ID = "your-reminder-sheet-id";
 
-  // Google Sheets configuration
-  google: {
-   credentialsPath: "./config/google.json",
-    spreadsheetId: "1eiAgXnIcpnvENFDMkrbJfV3HCb1cz568uLN_NzkZtEE", // from Google Sheets URL
-    remindersSheet: "Reminders" // tab name in the sheet
-  },
+export const EMAIL_PROVIDER = "gmail"; // or "sendgrid"
+export const SMS_PROVIDER = "twilio";  // or "africastalking"
 
-  // Notifications
-  notifications: {
-    twilio: {
-    accountSid: process.env.TWILIO_ACCOUNT_SID,
-    authToken: process.env.TWILIO_AUTH_TOKEN,
-    from: process.env.TWILIO_FROM_NUMBER
-    },
-    email: {
-    service: process.env.EMAIL_SERVICE || 'gmail',
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS
-    }
-    },
-    schedule: {
-    dailyCron: '0 9 * * *' // every day at 9:00 server local time
-    },
-    plans: {
-    monthly: 30,
-    quarterly: 90,
-    yearly: 365
-    },
-    hr: {
-    email: process.env.HR_EMAIL
-    }
-    };
+// Emails
+export const EMAIL_USER = process.env.EMAIL_USER;
+export const EMAIL_PASS = process.env.EMAIL_PASS;
+export const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
+
+// SMS
+export const TWILIO_SID = process.env.TWILIO_SID;
+export const TWILIO_TOKEN = process.env.TWILIO_TOKEN;
+export const TWILIO_FROM = process.env.TWILIO_FROM;
+
+export const AFRICASTALKING_USERNAME = process.env.AFRICASTALKING_USERNAME;
+export const AFRICASTALKING_API_KEY = process.env.AFRICASTALKING_API_KEY;

@@ -65,7 +65,7 @@ Ensure that details (plate number, phone, email, service date, etc.) stay correc
 
 5. Missing contact logging
 
-If a customer has no email and no phone, log them into a separate column in the reminder anad master sheet (It should be called "Manual Contact")
+If a customer has no email and no phone, log them into a separate column in the reminder and master sheet (It should be called "Manual Contact")
 
 This helps staff reach them manually.
 

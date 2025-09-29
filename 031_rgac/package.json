@@ -23,6 +23,8 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@sendgrid/mail": "^8.1.6",
+    "date-fns": "^4.1.0",
     "dotenv": "^17.2.2",
     "exceljs": "^4.4.0",
     "express": "^5.1.0",
@@ -30,6 +32,7 @@
     "luxon": "^3.7.2",
     "node-cron": "^4.2.1",
     "nodemailer": "^7.0.6",
+    "sendgrid": "^5.2.3",
     "twilio": "^5.10.0"
   }
 }
